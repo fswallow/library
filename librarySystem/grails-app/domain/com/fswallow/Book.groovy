@@ -6,10 +6,10 @@ String title
 String subject
 String author
 String isbn
-String dateBorrowed
-String returnDate
+Date dateBorrowed
+Date returnDate
 String student
-boolean overdue
+Boolean overdue
 
 
 
