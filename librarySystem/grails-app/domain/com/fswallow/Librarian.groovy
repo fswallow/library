@@ -7,8 +7,8 @@ String email
 String office
 String username
 String password
-int telephone
-String library
+String telephone
+Library library
 
 
     static constraints = {

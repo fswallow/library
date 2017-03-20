@@ -4,10 +4,10 @@ class Library {
 
 String building
 String address
-int openingHours
+String openingHours
 String location
 String studySpaces
-
+static hasMany=[librarians:Librarian, students:Student, books:Book]
 
     static constraints = {
 building blank:false, nullable:false

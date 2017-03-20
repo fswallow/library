@@ -2,9 +2,9 @@ package com.fswallow
 
 class BookReview {
 
-String book
+Book book
 Date dateMade
-String student
+Student student
 String review
  
 
@@ -13,10 +13,7 @@ String review
 book blank:false, nullable:false
 dateMade blank:false, nullable:false
 student blank:false, nullable:false
-review blank:false, nullable:false, maxSize:5000
-
-
-
+review blank:false, nullable:false
 
 
     }

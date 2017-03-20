@@ -8,11 +8,11 @@ String author
 String isbn
 Date dateBorrowed
 Date returnDate
-String student
+Student student
 Boolean overdue
+Library library
 
-
-
+static hasMany=[bookreviews:BookReview]
 
 
 
@@ -26,7 +26,7 @@ dateBorrowed blank:false, nullable:false
 returnDate blank:false, nullable:false
 student blank:false, nullable:false
 overdue blank:false, nullable:false
-
+library blank:false, nullable:false
 
 
     }
