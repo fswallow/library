@@ -20,6 +20,5 @@ username blank:false, nullable:false,unique:true
 password blank:false, nullable:false,password:true
 telephone blank:false, nullable:false
 library blank:false, nullable:false
-
     }
 }
