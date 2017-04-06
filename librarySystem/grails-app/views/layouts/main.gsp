@@ -6,8 +6,9 @@
     <title>
         <g:layoutTitle default="Grails"/>
     </title>
- <g:libLoginToggle/>
- <g:stuLoginToggle/>
+
+
+
     <asset:javascript src="application.js"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 

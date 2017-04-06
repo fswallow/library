@@ -5,17 +5,46 @@ class LibrarianController {
     def scaffold = Librarian
 
 
+def theLibArea(){
+render view:'librarian'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def login(){
 
 }
 
 def validate(){
 
-def user = Librarian.findByUsername(params.username)
+def libUser = Librarian.findByUsername(params.username)
 
-if(user && user.password==params.password){
+if(libUser && libUser.password==params.password){
 
-session.user=user
+session.libUser=libUser
 render view:'home'
 
 }
@@ -29,7 +58,7 @@ else{
 }
 
 def logout={
-  session.user=null
+  session.libUser=null
   redirect(uri:'/')
 }
 }

@@ -9,13 +9,16 @@
     <assest:stylesheet src="home.css"/>
 </head>
 <body>
-
+<a href="main.gsp" onclick="javascript:window.history.back();">Back</a> 
 
     <div id="content" role="main">
     <div class="row">
     <div class="first">
 
-         <h3>Student Management<h3>
+
+
+
+         <h3>Student Management</h3>
 
      <p>Here you are able to create add and register students</p>
 
@@ -29,7 +32,7 @@
    
       <div class="second">
 
-         <h3>Book Management<h3>
+         <h3>Book Management</h3>
 
      <p>Here you are able to create and add books</p>
 
@@ -41,7 +44,7 @@
 
 <div class="first">
 
-         <h3>Course Management<h3>
+         <h3>Course Management</h3>
 
      <p>Here you are able to create courses and add course details</p>
 
@@ -54,7 +57,7 @@
 
    <div class="second">
 
-         <h3>librarian Management<h3>
+         <h3>librarian Management</h3>
 
      <p>Here you are able to create add and register students</p>
 
@@ -64,7 +67,17 @@
          </button>
     </div>
 
+ <div class="second">
 
+         
+
+     <h3>Student Search</h3>
+
+          <button type="button" class="btn btn-success">
+          
+            <g:link controller="student" action="advSearch">student search</g:link>
+         </button>
+    </div>
 
 </div
 </div>

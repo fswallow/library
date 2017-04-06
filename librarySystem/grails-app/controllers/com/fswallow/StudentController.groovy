@@ -4,17 +4,48 @@ class StudentController {
 
     def scaffold = Student
 
+
+def theStuArea(){
+render view:'students'
+}
+
+
+
+
+def advSearch(){
+}
+
+
+def advResults(){
+  def studentProps=Student.metaClass.properties*.name
+  def students=Student.withCriteria{
+      "${params.queryType}"{
+         params.each {field,value->
+          if(studentProps.grep(field)&&value){
+           ilike(field,value)
+}
+}
+}
+}
+[students : students]
+}
+
+
+
+
+
+
 def login(){
 
 }
 
 def validate(){
 
-def user = Librarian.findByUsername(params.username)
+def stuUser = Student.findByUsername(params.username)
 
-if(user && user.password==params.password){
+if(stuUser && stuUser.password==params.password){
 
-session.user=user
+session.stuUser=stuUser
 render view:'home'
 
 }
@@ -28,7 +59,7 @@ else{
 }
 
 def logout={
-  session.user=null
+  session.stuUser=null
   redirect(uri:'/')
 }
 

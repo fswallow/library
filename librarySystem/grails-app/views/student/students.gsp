@@ -11,12 +11,17 @@
         <section class="row colset-2-its">
             <h1>Welcome to the Library System</h1>
     <div class="row">
-     <g:link controller="student" action="theStuArea">Students</g:link>
-     <g:link controller="librarian" action="theLibArea">librarians</g:link>
         <assest:image src="main.jpg"/>
     </div>
 
-   
+      <div id="content" role= "main">
+  <h1>Students Login Area</h1>
+       <div class="row">
+       <div class="first">
+             <g:stuLoginToggle/>
+
+</div>
+
 
 
 
